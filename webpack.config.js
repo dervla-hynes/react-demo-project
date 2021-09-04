@@ -24,7 +24,7 @@ module.exports = {
               }
         ]
     },
-    watch: true,
+    // watch: true,
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
         alias: {
