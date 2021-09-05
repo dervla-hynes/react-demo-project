@@ -1,5 +1,5 @@
-import { Link, LinkProps } from '@components/link/Link';
-import { NavBarLinks } from '@components/links-list/LinksList';
+import { LinkProps } from '@components/link/Link';
+import { LinksList } from '@components/links-list/LinksList';
 import * as React from 'react';
 import './NavBar.scss';
 
@@ -17,9 +17,9 @@ const myLinks: LinkProps[] = [
 export const NavBar: React.FC<NavBarProps> = ({text}) => {
     return (
         <div id="navBar" className="nav-bar">
-            <img id="logo" src="..\src\resources\logo.png"></img>
+            <img id="logo" src="src/resources/logo.png"></img>
             <div id="spacer"></div>
-            <NavBarLinks links={myLinks} />
+            <LinksList links={myLinks} />
         </div>
     )
 }

@@ -2,11 +2,11 @@ import { Link, LinkProps } from '@components/link/Link';
 import * as React from 'react';
 import './LinksList.scss';
 
-type NavBarLinksProps = {
+type LinksListProps = {
     links: LinkProps[]
 }
 
-export const NavBarLinks: React.FC<NavBarLinksProps> = ({links}) => {
+export const LinksList: React.FC<LinksListProps> = ({links}) => {
     return (
         <div id="linksList">
             {links.map((link, index) => {
@@ -16,4 +16,4 @@ export const NavBarLinks: React.FC<NavBarLinksProps> = ({links}) => {
     )
 }
 
-NavBarLinks.displayName = "LinksList";
+LinksList.displayName = "LinksList";
