@@ -17,7 +17,7 @@ const myLinks: LinkProps[] = [
 export const NavBar: React.FC<NavBarProps> = ({text}) => {
     return (
         <div id="navBar" className="nav-bar">
-            <img id="logo" src="src/resources/logo.png"></img>
+            <img id="logo" src="./resources/logo.jpg"></img>
             <div id="spacer"></div>
             <LinksList links={myLinks} />
         </div>
