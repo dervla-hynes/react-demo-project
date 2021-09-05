@@ -1,0 +1,19 @@
+@import "../../App.scss";
+
+#customDate {
+    color: $tertiary-color;
+
+    button {
+        color: $tertiary-color;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    p {
+        padding: 10px;
+    }
+}
