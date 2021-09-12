@@ -1,0 +1,52 @@
+@import "../../App.scss";
+
+.card {
+    margin: 40px;
+    position: relative;
+    max-width: 250px;
+    max-height: 350px;
+    box-shadow: 0 40px 60px -6px black;
+    height: 300px;
+    width: 60%;
+
+    .card-title {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        color: #fff;
+        background-color: $primary-color;
+        padding: 2%;
+        border-radius: 4px;
+    }
+
+    img {
+        // width: 200px;
+        margin-left: 40px;
+        margin-top: 50px;
+        // height: 100px;
+        object-fit: cover;
+        display: block;
+        position: relative;
+    }
+
+    .card-desc {
+        display: block;
+        font-size: 1.2rem;
+        position: absolute;
+        height: 0;
+        top: 40%;
+        opacity: 0;
+        padding: 18px 8%;
+        transition: 0.8s;
+        border-radius: 4px;
+        background-color: $primary-color;
+    }
+}
+  
+.card:hover .card-desc {
+    opacity: 1;
+    height: 150px;
+    width: 84%;
+}
+  
+  

@@ -1,0 +1,19 @@
+@import "../../../App.scss";
+
+#flavoursSection {
+    background-color: $secondary-color;
+    margin: 0px;
+    padding: 40px;
+    height: 800px;
+
+    h1 {
+        text-align: center;
+    }
+
+    .flavours {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
